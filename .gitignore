@@ -1,0 +1,118 @@
+# ==========================================================
+# Python NLP - .gitignore
+# Keep source code, requirements, README, tests and notebooks.
+# ==========================================================
+
+# Python bytecode / caches
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.pyre/
+.pytype/
+.hypothesis/
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+.tox/
+.nox/
+.cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+virtualenv/
+.python-version
+
+# Local secrets / environment configuration
+.env
+.env.*
+!.env.example
+!.env.template
+*.pem
+*.key
+secrets.json
+
+# IDEs / editors
+.idea/
+.vscode/
+*.code-workspace
+*.swp
+*.swo
+*~
+
+# Operating system
+.DS_Store
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Build / Python packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+*.egg
+pip-wheel-metadata/
+
+# Project data, model artifacts, experiment outputs
+# These folders are ignored at the repository root.
+/data/
+/datasets/
+/raw_data/
+/new_data/
+/models/
+/checkpoints/
+/outputs/
+/results/
+/logs/
+/runs/
+/artifacts/
+
+# Machine learning experiment tracking
+wandb/
+mlruns/
+mlartifacts/
+lightning_logs/
+tensorboard/
+events.out.tfevents.*
+
+# Downloaded model caches
+huggingface/
+transformers_cache/
+.huggingface/
+
+# Model weights and checkpoint files
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.onnx
+*.h5
+*.hdf5
+*.joblib
+*.pkl
+*.pickle
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+*.bak
+*.old
+
+# Word documents (requested)
+*.docx
+~$*.docx
+
+# Note: Do NOT ignore *.py, *.ipynb, *.txt, *.csv or *.json globally.
+# Small example datasets, configs and unit-test fixtures may belong in Git.
